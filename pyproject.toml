@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mercari-purchase-bot"
+version = "0.1.0"
+description = ""
+authors = ["TomoyaFujita2016 <fujita.t.2016c@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+web-adapter = {git = "https://github.com/TomoyaFujita2016/web-adapter", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
