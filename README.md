@@ -1,5 +1,5 @@
 # mercari-robot
-- Robbtで商品購入
+- RPAで商品購入的な何か
 ## Installation
 - `poetry add git+https://github.com/TomoyaFujita2016/mercari-robot#main`
 
