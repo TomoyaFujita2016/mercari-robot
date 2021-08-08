@@ -1,5 +1,6 @@
 # mercari-robot
 - RPAで商品購入的な何か
+- ログインセッションを保存できるのでreCAPTCHAあっても自動起動✨
 ## Installation
 - `poetry add git+https://github.com/TomoyaFujita2016/mercari-robot#main`
 
