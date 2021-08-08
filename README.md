@@ -4,7 +4,7 @@
 - `poetry add git+https://github.com/TomoyaFujita2016/mercari-robot#main`
 
 ## Sample
-```
+```python
 import time
 from mercari_purchase_bot import Robot
 
