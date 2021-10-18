@@ -16,6 +16,10 @@ class Robot:
     DEFAULT_USER_PROFILE_DIR_NAME = ".user_profiles"
     LOGIN_TIME_LIMIT = 60 * 10  # 10分
     EH = {
+        "login_hint": ElementHint(
+            "#gatsby-focus-wrapper > div > div > header > mer-navigation-top > nav > mer-navigation-top-menu > mer-menu > mer-navigation-top-menu-item > mer-text",
+            Type.CSS_SELECTOR,
+        ),
         "login_page_btn": ElementHint(
             "#gatsby-focus-wrapper > div > div > header > mer-navigation-top > nav > mer-navigation-top-menu > mer-navigation-top-menu-item:nth-child(2)",
             Type.CSS_SELECTOR,
@@ -96,10 +100,15 @@ class Robot:
         # self.web_adapter.click_this(Robot.EH["loginbtn"])
 
         # マイページが表示されるまで待つ
-        is_login_succeeded = self.web_adapter.wait_for_element(
-            Robot.EH["mypage_tab"],
-            latency=Robot.LOGIN_TIME_LIMIT,
-        )
+        is_login_succeeded = False
+        for i in range(Robot.LOGIN_TIME_LIMIT):
+            element = self.web_adapter.find_element(Robot.EH["login_hint"])
+            if element is not None:
+                hint = element.text
+                if hint == "アカウント":
+                    is_login_succeeded = True
+                    break
+            time.sleep(1)
         return is_login_succeeded
 
     def do_sms_auth(self, code):
