@@ -113,6 +113,12 @@ class Robot:
         is_displayed = self.web_adapter.wait_for_element(
             Robot.EH["mypage_tab"], latency=latency
         )
+        if not is_displayed:
+            self.close_welcome_dialog(latency=2)
+            is_displayed = self.web_adapter.wait_for_element(
+                Robot.EH["mypage_tab"], latency=latency
+            )
+
         log.debug(f"is_logged_in={is_displayed}")
         return is_displayed
 

@@ -26,7 +26,7 @@ beautifulsoup4 = "*"
 
 [[package]]
 name = "certifi"
-version = "2021.5.30"
+version = "2021.10.8"
 description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
 optional = false
@@ -34,7 +34,7 @@ python-versions = "*"
 
 [[package]]
 name = "charset-normalizer"
-version = "2.0.6"
+version = "2.0.7"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
 category = "main"
 optional = false
@@ -76,7 +76,7 @@ colorama = "*"
 
 [[package]]
 name = "idna"
-version = "3.2"
+version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
 category = "main"
 optional = false
@@ -161,13 +161,13 @@ webdriver-manager = "^3.4.2"
 
 [package.source]
 type = "git"
-url = "https://github.com/TomoyaFujita2016/web-adapter.git"
+url = "https://github.com/TomoyaFujita2016/web-adapter"
 reference = "main"
-resolved_reference = "129ce20e792c7ab3a095a34efbbeeb8f3e8b51aa"
+resolved_reference = "c148ab4a0cccfb2e0d8d6aaa0b895faad6b9edb3"
 
 [[package]]
 name = "webdriver-manager"
-version = "3.4.2"
+version = "3.5.1"
 description = "Library provides the way to automatically manage drivers for different browsers"
 category = "main"
 optional = false
@@ -181,7 +181,7 @@ requests = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "3d33754a2974e76a44746773b7ad6bd6577ecc4400eb0cf5c5bbfba1f06a3244"
+content-hash = "b5ba77d5848f09559cfcda16ca20cce758729487c3117b8f8b570321348c728b"
 
 [metadata.files]
 beautifulsoup4 = [
@@ -192,12 +192,12 @@ bs4 = [
     {file = "bs4-0.0.1.tar.gz", hash = "sha256:36ecea1fd7cc5c0c6e4a1ff075df26d50da647b75376626cc186e2212886dd3a"},
 ]
 certifi = [
-    {file = "certifi-2021.5.30-py2.py3-none-any.whl", hash = "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"},
-    {file = "certifi-2021.5.30.tar.gz", hash = "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"},
+    {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
+    {file = "certifi-2021.10.8.tar.gz", hash = "sha256:78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"},
 ]
 charset-normalizer = [
-    {file = "charset-normalizer-2.0.6.tar.gz", hash = "sha256:5ec46d183433dcbd0ab716f2d7f29d8dee50505b3fdb40c6b985c7c4f5a3591f"},
-    {file = "charset_normalizer-2.0.6-py3-none-any.whl", hash = "sha256:5d209c0a931f215cee683b6445e2d77677e7e75e159f78def0db09d68fafcaa6"},
+    {file = "charset-normalizer-2.0.7.tar.gz", hash = "sha256:e019de665e2bcf9c2b64e2e5aa025fa991da8720daa3c1138cadd2fd1856aed0"},
+    {file = "charset_normalizer-2.0.7-py3-none-any.whl", hash = "sha256:f7af805c321bfa1ce6714c51f254e0d5bb5e5834039bc17db7ebe3a4cec9492b"},
 ]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
@@ -212,8 +212,8 @@ crayons = [
     {file = "crayons-0.4.0.tar.gz", hash = "sha256:bd33b7547800f2cfbd26b38431f9e64b487a7de74a947b0fafc89b45a601813f"},
 ]
 idna = [
-    {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
-    {file = "idna-3.2.tar.gz", hash = "sha256:467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"},
+    {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
+    {file = "idna-3.3.tar.gz", hash = "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"},
 ]
 lxml = [
     {file = "lxml-4.6.3-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:df7c53783a46febb0e70f6b05df2ba104610f2fb0d27023409734a3ecbb78fb2"},
@@ -281,6 +281,6 @@ urllib3 = [
 ]
 web-adapter = []
 webdriver-manager = [
-    {file = "webdriver_manager-3.4.2-py2.py3-none-any.whl", hash = "sha256:50a6e174106542f5335cacc387cec7ada26812babc1aeca61c208a1bab2ac2c5"},
-    {file = "webdriver_manager-3.4.2.tar.gz", hash = "sha256:c6d81590aae6fc0fb10cf7dd20c8c1b9bb043501f9cf62c316a854a0de841e32"},
+    {file = "webdriver_manager-3.5.1-py2.py3-none-any.whl", hash = "sha256:a1940a808ea14302086ea7416053f24a1e1037975242eed99eb083f27752c505"},
+    {file = "webdriver_manager-3.5.1.tar.gz", hash = "sha256:02f3224baaf08ae797ba044485e711af019185840f6b8561542cd7aa9e5fd276"},
 ]
